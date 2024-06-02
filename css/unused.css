@@ -1,0 +1,63 @@
+.ib {
+  display: inline-block;
+}
+
+.bl {
+  display: block;
+}
+
+.m1 {
+  margin-left: 48px;
+}
+
+.m2 {
+  margin-left: 96px;
+}
+
+.red {
+  color: #ff5a00;
+}
+
+.blue {
+  color: #06c;
+}
+
+.val {
+  color: lightsalmon;
+}
+
+.type {
+  color: lightblue;
+}
+
+.hidden {
+  display: none;
+}
+
+.mb-10 {
+  margin-bottom: 140vh;
+}
+
+.mb-8 {
+  margin-bottom: 80vh;
+}
+
+.mb-6 {
+  margin-bottom: 40vh;
+}
+
+.mb-1 {
+  margin-bottom: 10vh;
+}
+
+.mb-16px {
+  margin-bottom: 16px;
+}
+
+.mb-32px {
+  margin-bottom: 32px;
+}
+
+.mlr-1 {
+  margin: 0 8px;
+}

@@ -1,93 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ryson Consulting LLC - Smart Business Cards</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            background-color: #ffffff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .header {
-            text-align: center;
-            padding: 20px 0;
-        }
-        .header img {
-            width: 150px;
-        }
-        .header h1 {
-            color: #333;
-            margin-top: 10px;
-        }
-        .content {
-            text-align: center;
-            color: #333;
-        }
-        .content h2 {
-            color: #0066cc;
-        }
-        .benefits {
-            text-align: left;
-            margin-top: 20px;
-        }
-        .benefits ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .benefits li {
-            margin: 10px 0;
-            font-size: 18px;
-        }
-        .contact {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .contact p {
-            font-size: 18px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="header">
-            <img src="./logo.png" alt="Ryson Consulting LLC Logo">
-            <h1>Ryson Consulting LLC</h1>
-        </div>
-        <div class="content">
-            <h2>Welcome to Ryson Consulting LLC</h2>
-            <p>
-                At Ryson Consulting LLC, we specialize in providing incredible cost-effective domain and static website solutions tailored to your business needs. Introducing our latest offering, "Smart Business Cards," which revolutionizes the way you present your business online.
-            </p>
-            <h2>Why Choose Smart Business Cards?</h2>
-            <div class="benefits">
-                <ul>
-                    <li><strong>Professional Website Look and Feel:</strong> Your Smart Business Card will feature a sleek, modern design that showcases your business professionally and effectively.</li>
-                    <li><strong>Google Search Capability:</strong> Ensure your business is easily discoverable online with Google Search integration, enhancing your visibility and attracting more customers.</li>
-                    <li><strong>Customer Reviews:</strong> Allow your clients to leave reviews about your services, similar to Google Reviews. This feature helps build trust and credibility with potential customers.</li>
-                    <li><strong>Cost-Effective Solution:</strong> With a setup cost of just $199 and an annual maintenance fee of only $12, our service offers total ownership at a price lower than traditional business cards. There are no hidden costs, ensuring complete transparency.</li>
-                    <li><strong>100% Ownership:</strong> You have full ownership of your domain and website, giving you complete control over your online presence.</li>
-                </ul>
-            </div>
-            <h2>Simple and Affordable</h2>
-            <p>Setup Cost: $199<br>Annual Maintenance: $12<br>No Hidden Costs</p>
-            <p>With Ryson Consulting LLC, you can have a professional and fully functional website for less than the cost of traditional business cards. Our Smart Business Cards provide a simple and affordable solution for establishing your business online.</p>
-            <div class="contact">
-                <h2>Contact Us</h2>
-                <p>Ready to elevate your business with a Smart Business Card? Contact Ryson Consulting LLC today to get started!</p>
-                <p>Email: info@rysonconsulting.com<br>Phone: (123) 456-7890</p>
-                <p>Join the digital age with Ryson Consulting LLC's Smart Business Cards and watch your business grow!</p>
-            </div>
-        </div>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Ryson's Web Services">
+    <meta property="og:title" content="Ryson's Web Services">
+    <meta property="og:description" content="We offer consulting services to create and maintain business websites.">
+    <meta property="og:image" content="./img/thumb.jpg">
+    <title id='js-title'>Ryson's Web Services</title>
+    <link href="./css/common.css" rel="stylesheet" type="text/css" />
+    <link href="./css/form.css" rel="stylesheet" type="text/css" />
+    <link href="./css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="./css/type.css" rel="stylesheet" type="text/css" />
+    <link href="./css/index.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="./img/favi.png" type="image/x-icon"/>
+  </head>
+  <body id='js-body' class='body'>
+    <nav class='menu-wr'>
+      <div onclick='gotoHome()' class='menu'>Home</div>
+      <div onclick='handleScroll("js-content")' class='menu'>Services</div>
+      <div onclick='handleScroll("js-contact")' class='menu'>Contact</div>
+    </nav>
+    <div class='bg-wr'>
+      <img id='js-main-img-1' class='main-img-partial-bw' src='./img/banner-bw-m.jpg' />
+      <img id='js-main-img-2' class='main-img-partial-col' src='./img/banner-col-m.jpg' />
+      <img id='js-main-img-3' class='main-img-full' src='./img/banner-full-m.jpg' />
     </div>
-</body>
+    <header id='js-header' class='header'>
+      <div id='js-banner-wr' class='text-head-wr'>
+        <span id='js-type-01' class='text-head type-text'></span>
+        <span id='js-space-01' class='text-head hidden'>&nbsp;</span>
+        <br id='js-next-01' class='hidden' />
+        <span id='js-type-02' class='text-head type-text'></span>
+        <span id='js-space-02' class='text-head hidden'>&nbsp;</span>
+        <br id='js-next-02' class='hidden' />
+        <span id='js-type-03' class='text-head type-text'></span>
+        <div id='js-link' class='link-details-wr'>
+          <div onclick='handleScroll("js-content")' class='link-details'><span id='js-link-details'>Details &gt;</span></div>
+        </div>
+      </div>
+    </header>
+    <main id ='js-content' rol='content' class='layout-wr'>
+      <div class='two-col-wr'>
+        <div id='js-main-title' class='two-col-title'></div>
+        <div id='js-main-desc' class='two-col-desc'></div>
+      </div>
+
+      <div class='one-col-wr'>
+        <div id='js-feat-title' class='one-col-title'></div>
+        <div class='tile-list-wr'>
+          <div class='tile-wr'>
+            <div class='tile thumb-design'>
+              <img src='./icon/accessories.svg' />
+              <span id='js-feat1-title' class='tile-title'></span>
+              <span id='js-feat1-desc' class='tile-text'></span>
+            </div>
+          </div>
+          <div class='tile-wr'>
+            <div class='tile'>
+              <img src='./icon/service.png' />
+              <span id='js-feat2-title' class='tile-title'></span>
+              <span id='js-feat2-desc' class='tile-text'></span>
+            </div>
+          </div>
+          <div class='tile-wr'>
+            <div class='tile thumb-dollar'>
+              <img src='./icon/dollar-ak.jpg' />
+              <span id='js-feat3-title' class='tile-title'></span>
+              <span id='js-feat3-desc' class='tile-text'></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id='js-contact' class='contact-wr'>
+        <div id='js-notice-wr' class='notice-wr hidden'>
+          <div id='js-notice-success' class='notice hidden'></div>
+          <div id='js-notice-err' class='notice notice-err hidden'></div>
+        </div>  
+        <div class='sec-wr'>
+          <div class='sec-title mb-16px'>Request a service</div>
+          <div id='js-contact-desc' class='sec-desc text'></div>
+        </div>
+        <form id='js-contact-form' action='https://formspree.io/f/yourid' method="POST" class='contact-form-wr'>
+        </form>
+      </div>
+    </main>
+    <footer id='js-footer' class='footer'></footer>
+  </body>
+  <script type="text/javascript" src="./js/common.js"></script>
+  <script type="text/javascript" src="./CUSTOM.js"></script>
+  <script type="text/javascript" src="./js/scroll.js"></script>
+  <script type="text/javascript" src="./js/contact.js"></script>
+  <script type="text/javascript" src="./js/type.js"></script>
+  <script type="text/javascript" src="./js/index.js"></script>
 </html>

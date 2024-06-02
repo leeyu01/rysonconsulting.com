@@ -1,0 +1,208 @@
+/* set this up main level */
+.layout-wr {
+    width: 100%;
+    padding-top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    color: #1d1d1f;
+    background-color: #fff;
+    text-align: center;
+}
+
+.two-col-wr {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    align-items: baseline;
+    justify-content: left;
+}
+  
+.two-col-title {
+    width: 30%;
+    font-family: "SF_Pro_Display_Bold", sans-serif;
+    font-size: 32px;
+    line-height: 1.125;
+    letter-spacing: .004em;
+    text-align: left;  
+}
+
+.two-col-desc {
+    width: 55%;
+    color: #86868b;
+    font-family: "SF_Pro_Display_Semibold", sans-serif;
+    font-size: 21px;
+    line-height: 1.5;
+    letter-spacing: .011rem;
+    text-align: left;
+}
+
+.one-col-wr {
+    margin-top: 128px;
+    padding-top: 96px;
+    background-color: #f5f5f7;
+    min-height: 70vh;
+}
+
+.one-col-title {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%; 
+    max-width: 1200px;
+    text-align: center;
+    font-family: "SF_Pro_Display_Bold", sans-serif;
+    font-size: 32px;
+    line-height: 1.125;
+    letter-spacing: .004em;
+    text-align: left;
+}
+ 
+.tile-list-wr {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 48px;
+    padding-bottom: 10vh;
+    width: 95%; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.tile-wr {
+    margin: 18px 18px;  /* edit if necessary*/
+}
+
+.tile {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 30px;
+    text-align: left;
+    width: 380px; /* Edit necessary */
+    height: 450px; /* Edit necessary */
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.04);
+}
+
+
+.tile-up {
+    background-color: #fff;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 30px 30px 0;
+    text-align: left;
+    width: 400px; /* Edit necessary */
+    height: 226px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.04);
+}
+  
+.tile-bot {
+    background-color: #fff;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 400px; /* Edit necessary */
+    height: 226px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.04);
+}
+  
+.tile-title {
+    display: inline-block;
+    margin-bottom: 16px;
+    font-size: 28px;
+    line-height: 1.1428571429;
+    letter-spacing: .007em;
+    font-family: "SF_Pro_Display_Semibold", sans-serif;
+}
+  
+.tile-text {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: 17px;
+    line-height: 1.4705882353;
+    letter-spacing: -0.022em;
+    font-family: "SF_Pro_Text_Regular", sans-serif;
+    font-style: normal;
+}
+
+.tile-text-bold {
+    font-family: "SF_Pro_Display_Semibold", sans-serif;
+}
+
+
+.footer{
+    padding-bottom: 32px;
+    text-align: center; 
+    background-color: #fff;
+}
+  
+
+
+/* User Edit */
+.tile img {
+    display: block;
+    height: 48px;
+}
+
+.thumb-design {
+    background: url('../img/thumb-design.jpg');  
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+
+}
+
+.thumb-branding {
+    background: url('../img/thumb-branding.jpg');  
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+
+}
+
+.thumb-dollar {
+    background: url('../img/thumb-dollar.jpg');  
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+}
+  
+/* User Edit */
+
+
+/* Mobile, <900px */
+@media only screen and (max-width: 900px) {
+  
+}  
+
+@media only screen and (max-width: 540px) {
+    .two-col-wr {
+        flex-direction: column;
+    }
+      
+    .two-col-title {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .two-col-desc {
+        width: 100%;
+    }
+
+    .tile-list-wr {
+        padding-top: 16px;
+    }
+
+    .one-col-wr {
+        margin-top: 64px;
+        padding-top: 52px;
+    }
+
+    .tile-up {
+        width: 360px; /* max mobile */
+    }
+      
+    .tile-bot {
+        width: 360px; /* max mobile */
+    }
+
+}  
