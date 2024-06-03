@@ -112,7 +112,7 @@ main {
 
 .full-opacity-trans {
   opacity: 1;
-  transition: opacity 0.5s ease-in;
+  transition: opacity 1.5s ease-in;
 }
 
 .link-details-wr {
