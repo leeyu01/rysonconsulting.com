@@ -115,7 +115,6 @@ const renderBanner = async () => {
   blinkCaret(false);
 
 
-  // switch
   hideCaret();
   getEl('js-type-03').style.color = '#a2a2a2';
   getEl('js-type-03').innerHTML = phrase4.split(' ')[2];
@@ -127,13 +126,11 @@ const renderBanner = async () => {
   getEl('js-main-img-2').classList.add('col-opacity-trans');
   blinkCaret();
 
-  // clear switch
   await elapseTime(2000);
   getEl('js-type-03').innerHTML = '';
   getEl('js-switch-wr').remove();
   moveCaret('js-type-03');
 
-  // volume
   hideCaret();
   getEl('js-type-03').classList.remove('font-color-transition');
   getEl('js-type-03').innerHTML = phrase5.split(' ')[2];
@@ -159,7 +156,6 @@ const renderBanner = async () => {
 
   const phrase6Arr = phrase6.split(' ');
 
-  // last "make it yours"
   if (isMobile()) getEl('js-banner-wr').style.paddingLeft = 0;
   getEl('js-type-01').style.color = '#fff';
   getEl('js-type-02').style.color = '#fff';
@@ -174,11 +170,10 @@ const renderBanner = async () => {
   await typeText('js-type-03', phrase6Arr[2], 40);
   await elapseTime(1500);
 
-  // replace "it" with global
+  hideCaret();
   getEl('js-type-02').innerHTML = `<div class='image-wr globe-wr fi-short'><img  id='js-globe' class='globe-size' src='./icon/globe-white-solid.svg'></div>`;
   await elapseTime(1000);
 
-  hideCaret();
   getEl('js-link').style.opacity = 1;
   getEl('js-link-details').classList.add('flashing');
 
