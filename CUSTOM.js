@@ -12,7 +12,7 @@ const phrase5 = `Make it spread`;
 const phrase6 = `Make it yours`;
 
 const email = `info@rysonconsulting.com`;
-const phone = `(123) 456-7890`;
+const phone = `(631) 618-6882`;
 
 const messageSuccess = `Your request is successfully sent to Ryson.`;
 const messageFail = `Sorry my mailbox is not set up yet. Please email us at info@rysonconsulting.com`;
