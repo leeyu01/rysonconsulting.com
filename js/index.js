@@ -60,7 +60,7 @@ const fillStaticText = () => {
   <button type='submit' class='button-blue'>Send your request</button>
   `;
 
-  getEl('js-footer').innerHTML = `© 2024 ${phrase1}`;
+  getEl('js-footer').innerHTML = `© 2026 ${phrase1}`;
 }
 
 const renderBanner = async () => {
