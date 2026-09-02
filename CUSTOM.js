@@ -12,7 +12,7 @@ const phrase5 = `Make it reliable`;
 const phrase6 = `Make it scalable`;
 
 const email = `info@rysonconsulting.com`;
-const phone = `(631) 618-6882`;
+const phone = `(631) 268-4033`;
 
 const messageSuccess = `Your consultation request was successfully sent to Ryson Consulting.`;
 const messageFail = `Sorry, our online form is not available yet. Please email us at info@rysonconsulting.com.`;
