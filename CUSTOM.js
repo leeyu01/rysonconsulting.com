@@ -1,25 +1,26 @@
 "use strict"
 
 /*
- * Anthony note: Changing these texts may cause severe side effects. 
- * Please beware of changing the length of texts and number of words. 
+ * Anthony note: Changing these texts may cause severe side effects.
+ * Please beware of changing the length of texts and number of words.
  */
-const phrase1 = `Ryson's Web Services`;
-const phrase2 = `Ryson's Web Consulting`;
-const phrase3 = `Make it affordable`;
-const phrase4 = `Make it unique`;
-const phrase5 = `Make it spread`;
-const phrase6 = `Make it yours`;
+const phrase1 = `Technical Consulting Services`;
+const phrase2 = `Ryson's Technical Consulting`;
+const phrase3 = `Make technology work`;
+const phrase4 = `Make it secure`;
+const phrase5 = `Make it reliable`;
+const phrase6 = `Make it scalable`;
 
 const email = `info@rysonconsulting.com`;
 const phone = `(631) 618-6882`;
 
-const messageSuccess = `Your request is successfully sent to Ryson.`;
-const messageFail = `Sorry my mailbox is not set up yet. Please email us at info@rysonconsulting.com`;
+const messageSuccess = `Your consultation request was successfully sent to Ryson Consulting.`;
+const messageFail = `Sorry, our online form is not available yet. Please email us at info@rysonconsulting.com.`;
 
 const mainDesc = `
-    We offer a personalized Web Starter Kit at a minimal cost, providing everything you need to 
-    jumpstart your website. With our service, you can present your business online with a custom domain 
-    in an ad-free environment within a couple of hours.
+    Ryson Consulting provides practical technical guidance and hands-on solutions for businesses
+    that need secure, reliable, and scalable technology. From IT infrastructure and cloud architecture
+    to cybersecurity and system optimization, we help organizations solve technical challenges and
+    operate more efficiently.
 `;
 
