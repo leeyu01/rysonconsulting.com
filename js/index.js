@@ -34,7 +34,7 @@ const fillStaticText = () => {
   getEl('js-feat1-desc').innerHTML = feat1Desc;
   getEl('js-feat2-desc').innerHTML = feat2Desc;
   getEl('js-feat3-desc').innerHTML = feat3Desc;
-  getEl('js-contact-desc').innerHTML = `Tell us about your technology environment, challenges, and business requirements. Complete the form below or contact us directly at <a href='mailto:${email}'>${email}</a> or <a href='tel:+16316186882'>${phone}</a>.`;
+  getEl('js-contact-desc').innerHTML = `Tell us about your technology environment, challenges, and business requirements. Complete the form below or contact us directly at <a href='mailto:${email}'>${email}</a> or <a href='tel:+16312684033'>${phone}</a>.`;
   getEl('js-contact-form').innerHTML = `<input type="hidden" name="_subject" value="New Technical Consultation Request">
   <input type="hidden" name="_template" value="table">
   <input type="hidden" name="_next" value="https://rysonconsulting.com/?submitted=true#js-contact">
