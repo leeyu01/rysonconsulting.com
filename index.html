@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ryson Consulting provides infrastructure, cloud, cybersecurity, and technical consulting services for businesses.">
+    <meta name="description" content="Ryson Consulting provides technical consulting backed by 30+ years of IT experience across infrastructure, databases, applications, networking, virtualization, cybersecurity, and compliance. Serving New York and remote clients.">
     <meta property="og:title" content="Technical Consulting Services | Ryson Consulting">
     <meta property="og:description" content="Practical consulting for secure infrastructure, cloud environments, cybersecurity, and modern business systems.">
     <meta property="og:image" content="https://rysonconsulting.com/img/thumb.jpg">
@@ -22,7 +22,8 @@
   <body id='js-body' class='body'>
     <nav class='menu-wr' aria-label='Primary navigation'>
       <div onclick='gotoHome()' class='menu'>Home</div>
-      <div onclick='handleScroll("js-content")' class='menu'>Consulting Services</div>
+      <div onclick='handleScroll("js-about")' class='menu'>About</div>
+      <div onclick='handleScroll("js-services")' class='menu'>Consulting Services</div>
       <div onclick='handleScroll("js-contact")' class='menu'>Contact</div>
     </nav>
     <div class='bg-wr'>
@@ -40,7 +41,7 @@
         <br id='js-next-02' class='hidden' />
         <span id='js-type-03' class='text-head type-text'></span>
         <div id='js-link' class='link-details-wr'>
-          <div onclick='handleScroll("js-content")' class='link-details'><span id='js-link-details'>Explore Consulting Services &gt;</span></div>
+          <div onclick='handleScroll("js-services")' class='link-details'><span id='js-link-details'>Explore Consulting Services &gt;</span></div>
         </div>
       </div>
     </header>
@@ -50,7 +51,31 @@
         <div id='js-main-desc' class='two-col-desc'></div>
       </div>
 
-      <div class='one-col-wr'>
+      <section id='js-about' class='experience-wr' aria-labelledby='experience-title'>
+        <div class='experience-heading'>
+          <span class='experience-location'>New York &amp; Remote</span>
+          <h2 id='experience-title'>30+ Years of Information Technology Experience</h2>
+          <p>
+            Ryson Consulting brings more than three decades of hands-on experience across the systems
+            that keep organizations secure, connected, and operational. We provide practical guidance,
+            technical problem-solving, and reliable support for clients throughout New York and remotely.
+          </p>
+        </div>
+        <ul class='experience-list' aria-label='Areas of information technology experience'>
+          <li>IT Infrastructure &amp; Systems Engineering</li>
+          <li>Database &amp; Data Management</li>
+          <li>Business Applications &amp; Systems Integration</li>
+          <li>Networking &amp; Connectivity</li>
+          <li>Virtualization &amp; Data Center Platforms</li>
+          <li>Cloud &amp; Hybrid Environments</li>
+          <li>Cybersecurity &amp; Vulnerability Management</li>
+          <li>Governance, Risk &amp; Compliance</li>
+          <li>Monitoring, Automation &amp; Technical Operations</li>
+          <li>Technical Strategy &amp; Troubleshooting</li>
+        </ul>
+      </section>
+
+      <div id='js-services' class='one-col-wr'>
         <h2 id='js-feat-title' class='one-col-title'></h2>
         <div class='tile-list-wr'>
           <div class='tile-wr'>
