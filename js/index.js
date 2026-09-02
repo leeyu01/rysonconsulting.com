@@ -1,31 +1,28 @@
 'use strict';
 
-const featTitle = `How are we different?`;
+const featTitle = `Technical Consulting Services`;
 
-const feat1Title = `Pixel-Perfect Design`;
+const feat1Title = `IT Infrastructure Consulting`;
 const feat1Desc = `
-    Experience our Starter Kit featuring our original, signature sleek and modern design. 
-    Unlike templates commonly utilized by platforms such as WordPress or Bootstrap, 
-    our output is entirely unique. <br/><br/>
-    Your website will boast an exclusive and professional appearance, ensuring it stands out distinctly from the crowd.
+    We assess and improve servers, networks, virtualization platforms, and business-critical systems.
+    Our goal is to create a reliable, manageable IT environment aligned with your business needs.
 `;
 
-const feat2Title = `Professional Branding`;
+const feat2Title = `Cloud & System Architecture`;
 const feat2Desc = `
-    Novice website creators often overlook critical features such as <a target='_blank' href='https://developer.mozilla.org/en-US/docs/Glossary/Semantics'>semantic design</a>, <a target='_blank' href='https://www.w3schools.com/html/html_responsive.asp'>mobile responsiveness</a>, <a target='_blank' href='https://www.ada.gov/resources/web-guidance/'>accessibility</a>, and <a target='_blank' href='https://developers.google.com/search/docs#what-is-seo '>SEO optimization</a>.<br/><br/>                    
-    Our Starter Kit ensures your website meets the modern web standards while enhancing your business credibility. With a custom domain name and a polished appearance, our kit simplifies professional website development.
+    We help businesses plan, migrate, and optimize cloud and hybrid environments based on security,
+    performance, availability, and cost requirements.
 `;
 
-const feat3Title = `Zero Maintenance Costs`;
+const feat3Title = `Cybersecurity Consulting`;
 const feat3Desc = `
-    Yes! We really mean <span class='tile-text-bold'>"Free"</span><br/><br/>
-    We guide you through deploying your website on <span class='tile-text-bold'>ad-free</span> and  <span class='tile-text-bold'>reliable</span> web hosting. Once we deliver your website, you have full ownership of your domain and website, giving you complete control over your online presence.<br/><br/>
-    The only optional ongoing expense is the annual domain registration (around $12 per year).
+    We identify security risks, strengthen technical controls, improve vulnerability management,
+    and help organizations prepare for security and compliance requirements.
 `;
 
 const fillStaticText = () => {
   const phrase1Arr = phrase1.split(' ');
-  getEl('js-title').innerHTML = phrase1;
+  getEl('js-title').innerHTML = `${phrase1} | Ryson Consulting`;
   getEl('js-main-title').innerHTML = `${phrase1Arr[0]}<br/>${phrase1Arr[1]} ${phrase1Arr[2]}`;
   getEl('js-main-desc').innerHTML = mainDesc;
   getEl('js-feat1-title').innerHTML = `${feat1Title}<br/>`;
@@ -37,30 +34,32 @@ const fillStaticText = () => {
   getEl('js-feat1-desc').innerHTML = feat1Desc;
   getEl('js-feat2-desc').innerHTML = feat2Desc;
   getEl('js-feat3-desc').innerHTML = feat3Desc;
-  getEl('js-contact-desc').innerHTML = `If you want to experience our web services, please fill out the form below or contact us directly at <a href='mailto:${email}'>${email}</a> or ${phone}`;
+  getEl('js-contact-desc').innerHTML = `Tell us about your technology environment, challenges, and business requirements. Complete the form below or contact us directly at <a href='mailto:${email}'>${email}</a> or <a href='tel:+16316186882'>${phone}</a>.`;
   getEl('js-contact-form').innerHTML = `<div class="contact-form-row">
     <div class="contact-form-text">
-      <input type='off' class='form-textbox-input' id='name' name='name' autocomplete='nope' placeholder='Your name' required aria-label='Enter name'>
+      <input type='text' class='form-textbox-input' id='name' name='name' autocomplete='name' placeholder='Your name' required aria-label='Your name'>
     </div>
     <div class='contact-form-sp'></div>
     <div class="contact-form-text">
-      <input type='email' class='form-textbox-input' id='email' name='email' autocomplete='off' placeholder='Email address' required aria-label='Enter email'>
+      <input type='email' class='form-textbox-input' id='email' name='email' autocomplete='email' placeholder='Email address' required aria-label='Email address'>
     </div>
     <div class='contact-form-sp'></div>
     <div id='js-contact-select' class="contact-form-text form-dropdown dropdown-fader">
-      <select class="form-textbox-input form-dropdown-select" data-ignore-tracking="true" id="js-form-service" aria-labelledby="services-dropdown_label">
-        <option disabled selected="" value="">Select a service type</option>
-        <option class="services-dropdown-item" value="Starter Kit">Request Web Starter Kit</option>
-        <option class="services-dropdown-item" value="Consulting">Consulting service</option>
-        <option class="services-dropdown-item" value="Others">Others</option>
+      <select class="form-textbox-input form-dropdown-select" data-ignore-tracking="true" id="js-form-service" name="service" required aria-label="Select a consulting service">
+        <option disabled selected value="">Select a service</option>
+        <option class="services-dropdown-item" value="IT Infrastructure Consulting">IT Infrastructure Consulting</option>
+        <option class="services-dropdown-item" value="Cloud and System Architecture">Cloud &amp; System Architecture</option>
+        <option class="services-dropdown-item" value="Cybersecurity Consulting">Cybersecurity Consulting</option>
+        <option class="services-dropdown-item" value="Technical Operations Support">Technical Operations Support</option>
+        <option class="services-dropdown-item" value="Other Technical Services">Other Technical Services</option>
       </select>
     </div>
   </div>
-  <textarea placeholder="Please briefly explain your business and website needs." class="form-textbox-input contact-form-textarea" name="message" rows="10" required></textarea>
-  <button type='submit' class='button-blue'>Send your request</button>
+  <textarea placeholder="Please briefly describe your current technology environment, technical challenges, and the assistance you need." aria-label="Technology needs" class="form-textbox-input contact-form-textarea" name="message" rows="10" required></textarea>
+  <button type='submit' class='button-blue'>Request a Consultation</button>
   `;
 
-  getEl('js-footer').innerHTML = `© 2026 ${phrase1}`;
+  getEl('js-footer').innerHTML = `© 2026 Ryson Consulting LLC. All rights reserved.`;
 }
 
 const renderBanner = async () => {
@@ -77,7 +76,7 @@ const renderBanner = async () => {
   getEl('js-next-01').classList.remove('hidden');
   await typeText('js-type-02', phraseArr[1], 100);
   getEl('js-space-02').classList.remove('hidden');
-  if (isMobile())getEl('js-next-02').classList.remove('hidden'); 
+  if (isMobile())getEl('js-next-02').classList.remove('hidden');
   await typeText('js-type-03', phraseArr[2], 40);
   blinkCaret(true);
   getEl('js-main-img-1').classList.add('bw-opacity-trans');
@@ -93,18 +92,18 @@ const renderBanner = async () => {
   await typeText('js-type-03', phrase2.split(' ')[2], 30);
   blinkCaret(true);
   await elapseTime(1500);
-   
+
   await initBanner(0);
-  
+
   if (!isMobile()) getEl('js-banner-wr').style.lineHeight = 2;
-  
+
   const phrase3Arr = phrase3.split(' ');
   moveCaret('js-type-01');
   await typeText('js-type-01', phrase3Arr[0], 50);
   getEl('js-space-01').classList.remove('hidden');
   await typeText('js-type-02', phrase3Arr[1], 100);
   getEl('js-space-02').classList.remove('hidden');
-  if (isMobile())getEl('js-next-02').classList.remove('hidden'); 
+  if (isMobile())getEl('js-next-02').classList.remove('hidden');
   await typeText('js-type-03', phrase3Arr[2], 20);
   await elapseTime(1000);
 
@@ -113,7 +112,6 @@ const renderBanner = async () => {
   getEl('js-type-03').innerHTML = '';
   moveCaret('js-type-03');
   blinkCaret(false);
-
 
   hideCaret();
   getEl('js-type-03').style.color = '#a2a2a2';
@@ -140,14 +138,14 @@ const renderBanner = async () => {
   blinkCaret();
   await elapseTime(2000);
 
-  getEl('js-volume-wr').remove(); // remove speaker
+  getEl('js-volume-wr').remove();
   getEl('js-type-03').classList.remove('vol-color-high', 'vol-color-low', 'vol-color-off');
   await initBanner(30);
 
   getEl('js-main-img-3').classList.add('full-opacity-trans');
   await elapseTime(1500);
 
-  getEl('js-banner-wr').style.textAlign = 'center'; // list one is centered
+  getEl('js-banner-wr').style.textAlign = 'center';
   if (isMobile()) {
     getEl('js-banner-wr').style.marginLeft = 0;
     getEl('js-banner-wr').style.lineHeight = 0.4;
@@ -163,20 +161,19 @@ const renderBanner = async () => {
   moveCaret('js-type-01');
   await typeText('js-type-01', phrase6Arr[0], 50);
   getEl('js-space-01').classList.remove('hidden');
-  if (isMobile())getEl('js-next-01').classList.remove('hidden'); 
+  if (isMobile())getEl('js-next-01').classList.remove('hidden');
   await typeText('js-type-02', phrase6Arr[1], 100);
   getEl('js-space-02').classList.remove('hidden');
-  if (isMobile())getEl('js-next-02').classList.remove('hidden'); 
+  if (isMobile())getEl('js-next-02').classList.remove('hidden');
   await typeText('js-type-03', phrase6Arr[2], 40);
   await elapseTime(1500);
 
   hideCaret();
-  getEl('js-type-02').innerHTML = `<div class='image-wr globe-wr fi-short'><img  id='js-globe' class='globe-size' src='./icon/globe-white-solid.svg'></div>`;
+  getEl('js-type-02').innerHTML = `<div class='image-wr globe-wr fi-short'><img id='js-globe' class='globe-size' src='./icon/globe-white-solid.svg' alt=''></div>`;
   await elapseTime(1000);
 
   getEl('js-link').style.opacity = 1;
   getEl('js-link-details').classList.add('flashing');
-
 }
 
 const gotoHome = () => {
@@ -184,7 +181,7 @@ const gotoHome = () => {
 }
 
 const startEventListener = () => {
-  startContactListener(); // start listener
+  startContactListener();
 }
 
 const main = async () => {
@@ -199,8 +196,6 @@ const main = async () => {
 
   renderBanner();
   fillStaticText();
-
-
 }
 
 main();
