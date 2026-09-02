@@ -74,22 +74,19 @@ const renderBanner = async () => {
   await elapseTime(300);
   getEl('js-space-01').classList.remove('hidden');
   getEl('js-next-01').classList.remove('hidden');
-  await typeText('js-type-02', phraseArr[1], 100);
-  getEl('js-space-02').classList.remove('hidden');
-  if (isMobile())getEl('js-next-02').classList.remove('hidden');
-  await typeText('js-type-03', phraseArr[2], 40);
+  await typeText('js-type-02', phraseArr[2], 100);
   blinkCaret(true);
   getEl('js-main-img-1').classList.add('bw-opacity-trans');
   await elapseTime(2000);
 
-  await selectText('js-type-03', 50);
+  await selectText('js-type-02', 50);
   await elapseTime(1000);
-  getEl('js-type-03').innerHTML = '';
-  moveCaret('js-type-03');
+  getEl('js-type-02').innerHTML = '';
+  moveCaret('js-type-02');
   blinkCaret(false);
   await elapseTime(100);
-  getEl('js-type-03').classList.add('text-subhead');
-  await typeText('js-type-03', phrase2.split(' ')[2], 30);
+  getEl('js-type-02').classList.add('text-subhead');
+  await typeText('js-type-02', `${phraseArr[1]} ${phraseArr[2]}`, 30);
   blinkCaret(true);
   await elapseTime(1500);
 
