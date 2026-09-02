@@ -51,7 +51,7 @@ const fillStaticText = () => {
         <option class="services-dropdown-item" value="Cloud and System Architecture">Cloud &amp; System Architecture</option>
         <option class="services-dropdown-item" value="Cybersecurity Consulting">Cybersecurity Consulting</option>
         <option class="services-dropdown-item" value="Technical Operations Support">Technical Operations Support</option>
-        <option class="services-dropdown-item" value="Other Technical Services">Other Technical Services</option>
+        <option class="services-dropdown-item" value="Other Consulting Needs">Other Consulting Needs</option>
       </select>
     </div>
   </div>
