@@ -56,6 +56,11 @@ const handleSubmit = async e => {
 
 
 const startContactListener = () => {
-  document.getElementById('js-contact-form').addEventListener('submit', handleSubmit);
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('submitted') === 'true') {
+    showNotice(true);
+    window.history.replaceState({}, document.title, window.location.pathname + '#js-contact');
+  }
+
   if (loc !== conv(cn)) bd.innerHTML = '';
 }
